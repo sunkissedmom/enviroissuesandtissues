@@ -189,6 +189,7 @@ section {
 .iframe-container {
     position: relative;
     width: 100%;
+    max-width: 1200px;
     padding-top: 75%;
     overflow: hidden;
 }
@@ -198,6 +199,7 @@ section {
     top: 0;
     left: 0;
     width: 100%;
+    max-width: 1200px;
     height: 100%;
     border: none;
 }
