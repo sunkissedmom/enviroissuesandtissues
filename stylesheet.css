@@ -309,6 +309,8 @@ section {
     .header-img,
     .event-item,
     .iframe-container,
+    .about-content,
+    .about-me,
     {
     width: 100%;
 }
