@@ -3,10 +3,14 @@ body {
     margin: 0;
     padding: 0;
     color: #04250a;
-    background-image: url('images/forestincolor.jpg'); /* Path to your image */
-    background-size: cover;                /* Ensures the image covers the entire background */
-    background-repeat: no-repeat;          /* Prevents tiling */
-    background-position: center;           /* Centers the image */
+    background-image: url('images/forestincolor.jpg');
+    /* Path to your image */
+    background-size: cover;
+    /* Ensures the image covers the entire background */
+    background-repeat: no-repeat;
+    /* Prevents tiling */
+    background-position: center;
+    /* Centers the image */
 }
 
 header {
@@ -154,6 +158,7 @@ section {
     text-align: center;
     color: white;
 }
+
 #roundedblock {
     width: 100%;
     background-color: #f0f0f0;
@@ -169,20 +174,22 @@ section {
     background-color: #e3e3e3;
     border-radius: 8px;
 }
+
 .video-wrap video {
-    float: left; /* Align the video to the left */
-    margin: 0 15px 10px 0; /* Add some spacing around the video */
-    max-width: 30%; /* Ensure the video is responsive */
+    float: left;
+    margin: 0 15px 10px 0;
+    max-width: 30%;
     min-width: 250px;
 }
 
 .video-wrap p {
-    text-align: justify; /* Optionally justify the text */
+    text-align: justify;
 }
+
 .iframe-container {
     position: relative;
     width: 100%;
-    padding-top: 75%; /* Aspect ratio: height divided by width (700 / 780 = ~75%) */
+    padding-top: 75%;
     overflow: hidden;
 }
 
@@ -199,17 +206,15 @@ section {
     font-size: 0.9em;
 }
 
-/* Sidebar */
 .sidebar {
     background-color: white;
     opacity: 1;
     width: 250px;
     padding: 20px;
     color: #073b18;
-    
+
 }
 
-/* Main content area */
 .content {
     flex: 1;
     background-color: #e2e2e2;
@@ -230,18 +235,21 @@ section {
 }
 
 .about-photo {
-    flex: 0 0 45%; /* Adjust this to control the size of the photo */
+    flex: 0 0 45%;
+    /* Adjust this to control the size of the photo */
     max-width: 300px;
     margin: 1em;
     text-align: left;
 }
 
 .about-photo img {
-    width: 100%; /* Make the image responsive */
+    width: 100%;
+    /* Make the image responsive */
 }
 
 .about-content {
-    flex: 0 0 60%; /* Adjust this for the text width */
+    flex: 0 0 60%;
+    /* Adjust this for the text width */
     max-width: 600px;
     margin: 1em;
 }
@@ -290,7 +298,6 @@ section {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Responsive Layout */
 @media (max-width: 768px) {
 
     .sidebar,
@@ -299,6 +306,7 @@ section {
     .video-wrap,
     .header-img,
     .event-item,
+    .iframe-container,
     {
     width: 100%;
 }
@@ -312,6 +320,7 @@ section {
     .grid-item,
     .event-item,
     .header-img,
+    .iframe-container,
     {
     width: calc(45% - 20px);
 }
@@ -325,6 +334,7 @@ section {
     .video-wrap,
     .grid-item,
     .header-img,
+    .iframe-container,
     {
     width: calc(25% - 15px);
 }
