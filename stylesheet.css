@@ -78,7 +78,6 @@ header img {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
-    min-width: auto;
     z-index: 10;
 }
 
@@ -203,6 +202,9 @@ h3 {
     background-color: #e3e3e3;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
+    align-self: center;
+    gap: 20px;
+
 }
 
 .about-photo {
@@ -217,23 +219,26 @@ h3 {
 }
 
 .about-content {
-    flex: 0 0 60%;
-    max-width: 600px;
+    max-width: 85%;
     margin: 1em;
+    align-items: center;
 }
 
 .about-content h2 {
     color: #073b18;
     margin-top: 0;
+    align-items: center;
 }
 
 .about-content p {
     margin: 1em 0;
+    align-items: center;
 }
 
 .event-link {
     text-decoration: none;
     color: inherit;
+    align-items: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -280,8 +285,8 @@ h3 {
 
 @media (max-width: 768px) {
     .main-container,
+    .event-item img,
     .header-img,
-    .about-me,
     .iframe-container {
         width: 100%;
     }
@@ -290,7 +295,6 @@ h3 {
 @media (min-width: 769px) and (max-width: 1024px) {
     .main-container,
     .header-img,
-    .about-me,
     .iframe-container {
         width: 80%;
         margin: auto;
@@ -300,7 +304,6 @@ h3 {
 @media (min-width: 1025px) {
     .main-container,
     .header-img,
-    .about-me,
     .iframe-container {
         min-width: 75%;
         margin: auto;
