@@ -111,6 +111,7 @@ footer {
     gap: 20px;
     justify-content: center;
     max-width: 100%;
+    margin-top: 1em;
 }
 
 .footer-text {
@@ -245,7 +246,8 @@ h3 {
     align-items: center;
     cursor: pointer;
     transition: transform 0.3s ease;
-    max-width: 1500px;
+    max-width: 1200px;
+    padding-top: 2em;
 }
 
 .event-item img {
@@ -256,19 +258,19 @@ h3 {
 }
 
 .event-description {
-    padding: 15px;
+    padding: 10px;
 }
 
 .event-description h3 {
     font-size: 1.5em;
     color: #073b18;
-    margin: 0 0 10px;
+    margin: 0 0 3px;
 }
 
 .event-description p {
     font-size: 1em;
     color: #555;
-    margin: 0;
+    margin-bottom: 5em;
     line-height: 1.5;
 }
 
