@@ -3,8 +3,7 @@ body {
     margin: 0;
     padding: 0;
     color: #04250a;
-    background-image: url('images/forestincolor.jpg');
-    /*default image*/
+    background-image: url('images/forestincolor.jpg'); /*default image*/
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -30,6 +29,7 @@ header img {
     max-height: 75;
 }
 
+/* Nav Menu */
 #nav_menu {
     display: flex;
     justify-content: center;
@@ -96,6 +96,7 @@ header img {
     display: block;
 }
 
+/*Footer with padding giving space between to show background image*/
 footer {
     background-color: #cdbbe2;
     color: white;
@@ -107,14 +108,9 @@ footer {
     box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
     justify-content: center;
     max-width: 100%;
     margin-top: 1em;
-}
-
-.footer-text {
-    font-size: 0.9em;
 }
 
 h1,
@@ -130,6 +126,7 @@ h3 {
     text-transform: uppercase;
 }
 
+/* Green vertical bar below nav; text for page details re:contents of page */
 .orange {
     margin-bottom: 1em;
     padding: 1em;
@@ -140,27 +137,27 @@ h3 {
     color: white;
 }
 
-.main-container {
-    display: flex;
-    flex: 1;
-    padding: 20px;
-    border-radius: 10px;
-}
-
 .container {
     width: 80%;
     margin: auto;
     padding: 1em;
 }
 
-.events,
-.contact {
-    margin-bottom: 2em;
-    padding: 1em;
+.content {
+    flex: 1;
     background-color: #e3e3e3;
+    padding: 20px;
     border-radius: 8px;
 }
 
+.events,
+.contact {
+    margin-bottom: 2em;
+    padding: 20px;
+    background-color: #e3e3e3;
+    border-radius: 8px;
+}
+/* Game Page; Styling the container to hold the games iframe, making it responsive */
 .iframe-container {
     position: relative;
     width: 100%;
@@ -177,7 +174,7 @@ h3 {
     height: 100%;
     border: none;
 }
-
+/* Service Project Pages for Cougar Conundrum, Salmon Days and Filucy Bay; Styling the side bar to and formating with content */
 .sidebar {
     position: relative;
     background-color: #e3e3e3;
@@ -187,12 +184,8 @@ h3 {
     color: #073b18;
 }
 
-.content {
-    flex: 1;
-    background-color: #e3e3e3;
-    padding: 20px;
-}
 
+/* About Me Page */
 .about-me {
     display: flex;
     flex-wrap: wrap;
@@ -208,33 +201,18 @@ h3 {
 }
 
 .about-photo {
-    flex: 0 0 45%;
-    max-width: 300px;
-    margin: 1em;
+    flex: 55%;
+    max-width: 450px;
+    padding: 20px 10px 0;    
     text-align: left;
 }
 
 .about-photo img {
     width: 100%;
+    padding-top: 20px;
 }
 
-.about-content {
-    max-width: 85%;
-    margin: 1em;
-    align-items: center;
-}
-
-.about-content h2 {
-    color: #073b18;
-    margin-top: 0;
-    align-items: center;
-}
-
-.about-content p {
-    margin: 1em 0;
-    align-items: center;
-}
-
+/* Service Project Main Page */
 .event-link {
     text-decoration: none;
     color: inherit;
@@ -268,15 +246,8 @@ h3 {
 
 .event-description h3 {
     font-size: 1.5em;
-    color: #073b18;
+    color: #073b18; /*changed from default h3 to stand out again background color*/
     margin: 0 0 3px;
-}
-
-.event-description p {
-    font-size: 1em;
-    color: #555;
-    margin-bottom: 5em;
-    line-height: 1.5;
 }
 
 .event-description {
@@ -284,6 +255,7 @@ h3 {
 }
 
 @media (max-width: 768px) {
+
     .main-container,
     .event-item img,
     .header-img,
@@ -293,6 +265,7 @@ h3 {
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
+
     .main-container,
     .header-img,
     .iframe-container {
@@ -302,6 +275,7 @@ h3 {
 }
 
 @media (min-width: 1025px) {
+
     .main-container,
     .header-img,
     .iframe-container {
@@ -309,4 +283,3 @@ h3 {
         margin: auto;
     }
 }
-
